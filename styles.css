@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0b3d91, #00c6ff);
+  color: white;
+}
+nav {
+  display: flex; 
+  justify-content: space-around;
+  background: black;
+  padding: 15px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #00c6ff;
+}
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img {
+  width: 300px;
+  border-radius: 10px;
+  margin: 10px;
+}
+.btn {
+  background: #00c6ff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: white;
+}
+h1 {
+  animation: aparecer 2s ease-in-out;
+}
+@keyframes aparecer {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
