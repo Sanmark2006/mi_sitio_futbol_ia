@@ -2,8 +2,91 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Messi</title>
+<title>Lionel Messi</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+.hero-messi {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://wallpapercave.com/wp/wp11914222.jpg') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.hero-messi h1 {
+  font-size: 60px;
+  margin: 0;
+}
+.hero-messi h2 {
+  font-weight: 300;
+  width: 60%;
+}
+.seccion {
+  padding: 60px 20px;
+  text-align: center;
+}
+.bloque {
+  max-width: 900px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+.grid-messi {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.card-messi {
+  background: white;
+  color: black;
+  width: 280px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+.estadisticas {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.stat {
+  font-size: 30px;
+  font-weight: bold;
+}
+.stat span {
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+}
+.animacion {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: aparecer 1s forwards;
+}
+.animacion:nth-child(2){animation-delay:0.3s;}
+.animacion:nth-child(3){animation-delay:0.6s;}
+.animacion:nth-child(4){animation-delay:0.9s;}
+@keyframes aparecer {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.frase-final {
+  font-size: 22px;
+  font-style: italic;
+  padding: 50px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+</style>
 </head>
 
 <body>
@@ -17,23 +100,124 @@
   <a href="messi.html">Messi</a>
 </nav>
 
-<div class="container">
+<section class="hero-messi">
+  <h1>Lionel Messi</h1>
+  <h2>El jugador que transformó el fútbol… y obligó a la tecnología a entenderlo</h2>
+</section>
 
-<h1>Lionel Messi</h1>
+<section class="seccion">
+  <div class="bloque">
+    <p>
+    Lionel Messi no es solo un futbolista, es un fenómeno que desafía modelos. Durante años,
+    los sistemas tradicionales no podían explicar su impacto en el juego. Su forma de moverse,
+    decidir y ejecutar acciones rompía cualquier patrón esperado.
+    </p>
 
-<p>
-Lionel Messi es considerado el mejor jugador de la historia. Su talento,
-visión y capacidad de definir partidos lo hacen único.
-</p>
+    <p>
+    Con la llegada de la Inteligencia Artificial y el análisis de datos, el fútbol encontró
+    una forma de medir lo que antes parecía imposible: la genialidad. Messi se convirtió en
+    el caso de estudio perfecto para entender cómo el talento humano puede superar incluso
+    las predicciones más avanzadas.
+    </p>
+  </div>
+</section>
 
-<img src="https://images.unsplash.com/photo-1546519638-68e109498ffc">
+<section class="seccion">
+  <h2>Messi desde los datos</h2>
 
-<p>
-La tecnología ha permitido analizar su rendimiento en detalle,
-confirmando su impacto en cada partido.
-</p>
+  <div class="estadisticas">
+    <div class="stat">800+<span>Goles</span></div>
+    <div class="stat">300+<span>Asistencias</span></div>
+    <div class="stat">90%<span>Precisión de pase</span></div>
+    <div class="stat">xG+<span>Eficiencia ofensiva</span></div>
+  </div>
+</section>
 
+<section class="seccion">
+  <h2>Lo que la IA descubrió</h2>
+
+  <div class="grid-messi">
+
+    <div class="card-messi animacion">
+      <h3>Toma de decisiones</h3>
+      <p>
+      Messi elige la mejor opción en milisegundos, optimizando jugadas con una precisión
+      que los modelos apenas comienzan a replicar.
+      </p>
+    </div>
+
+    <div class="card-messi animacion">
+      <h3>Movimiento sin balón</h3>
+      <p>
+      Sus desplazamientos generan ventajas invisibles que solo los mapas de calor avanzados
+      pueden revelar.
+      </p>
+    </div>
+
+    <div class="card-messi animacion">
+      <h3>Finalización</h3>
+      <p>
+      Su capacidad para convertir oportunidades en goles supera consistentemente
+      los valores esperados.
+      </p>
+    </div>
+
+    <div class="card-messi animacion">
+      <h3>Impacto global</h3>
+      <p>
+      Cada acción de Messi altera el comportamiento colectivo del equipo rival,
+      algo que la IA identifica como influencia sistémica.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="seccion">
+  <h2>Más allá de los números</h2>
+
+  <div class="bloque">
+
+    <p>
+    A pesar de todos los avances tecnológicos, hay algo que sigue siendo difícil de cuantificar:
+    la magia. Messi representa el límite entre lo medible y lo inexplicable.
+    </p>
+
+    <p>
+    La tecnología ha avanzado para entender el juego, pero en muchos casos, ha tenido que
+    adaptarse para intentar entender a Messi. No es solo un jugador dentro del sistema,
+    es una variable que redefine el sistema completo.
+    </p>
+
+  </div>
+</section>
+
+<section class="seccion">
+  <h2>Messi y el futuro del fútbol</h2>
+
+  <div class="bloque">
+
+    <p>
+    El legado de Messi no solo está en los títulos, sino en cómo obligó al fútbol a evolucionar.
+    Gracias a jugadores como él, hoy existen modelos más complejos, análisis más profundos y
+    una comprensión más avanzada del juego.
+    </p>
+
+    <p>
+    En un mundo dominado por algoritmos, Messi sigue siendo la prueba de que el talento humano
+    es el punto de partida de toda innovación.
+    </p>
+
+  </div>
+</section>
+
+<div class="frase-final">
+  "Messi no solo juega al fútbol… redefine lo que creemos posible dentro de él."
 </div>
+
+<footer>
+  <p>Proyecto Fútbol & Tecnología - 2026</p>
+</footer>
 
 </body>
 </html>
